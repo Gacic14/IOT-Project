@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature and Humidity Dashboard</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script defer src="app.js"></script>
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <h1>🌡️Temperatura i vlažnost zraka</h1>
+  <div class="container">
+    <div class="data">
+      <div class="input-group">
+        <label for="temperature"><i class="fas fa-thermometer-half"></i> Temperatura:</label>
+        <input type="number" id="temperature" placeholder="Temperatura" readonly disabled>
+      </div>
+      <div class="input-group">
+        <label for="humidity"><i class="fas fa-tint"></i> Vlažnost:</label>
+        <input type="number" id="humidity" placeholder="Humidity" readonly disabled>
+      </div>
+      <button class="button" id="refreshButton"><i class="fas fa-sync-alt"></i> Refresh Data</button>
+    </div>
+  </div>
+
+</body>
+</html>
